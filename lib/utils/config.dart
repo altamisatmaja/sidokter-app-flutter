@@ -26,7 +26,7 @@ class Config {
   static final spaceBig = SizedBox(height: screenHeight! * 0.08,);
 
   // text form field
-  static const outlineBorder = OutlineInputBorder(
+  static const outlinedBorder = OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(8)),
   );
 
@@ -43,5 +43,7 @@ class Config {
       color: Colors.red,
       ),
   );
+
+  static const primaryColor = Colors.greenAccent;
 
 }
