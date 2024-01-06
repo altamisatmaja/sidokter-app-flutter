@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sidokter_app/components/login_form.dart';
+import 'package:sidokter_app/components/social_button.dart';
 import 'package:sidokter_app/utils/config.dart';
 import 'package:sidokter_app/utils/text.dart';
 
@@ -69,6 +70,35 @@ class _AuthPageState extends State<AuthPage> {
                   color: Colors.grey.shade500,
                 ),
               ),
+          ),
+          Config.spaceSmall,
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              SocialButton(social: 'google'),
+              SocialButton(social: 'facebook'),
+            ],
+          ),
+          Config.spaceSmall,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                AppText.enText['signUp_text']!,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.grey.shade500,
+                ),
+              ),
+              const Text('Sign Up', 
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              )
+            ],
           )
         ],
       )),
