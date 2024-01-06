@@ -57,6 +57,18 @@ class _AuthPageState extends State<AuthPage> {
                 ),
               ),
             ),
+          ),
+          // social button sign in
+          const Spacer(),
+          Center(
+            child: Text(
+                AppText.enText['social-login']!,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.grey.shade500,
+                ),
+              ),
           )
         ],
       )),

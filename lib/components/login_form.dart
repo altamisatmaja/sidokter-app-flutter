@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sidokter_app/components/button.dart';
 import 'package:sidokter_app/utils/config.dart';
 
 class LoginForm extends StatefulWidget {
@@ -57,10 +58,15 @@ class _LoginFormState extends State<LoginForm> {
                           )
                         : const Icon(
                             Icons.visibility_outlined,
-                            color:  Config.primaryColor,
+                            color: Config.primaryColor,
                           ))),
           ),
-          Config.spaceSmall
+          Config.spaceSmall,
+          Button(
+              width: double.infinity,
+              title: 'Sign In',
+              disable: false,
+              onPressed: () {})
         ],
       ),
     );
